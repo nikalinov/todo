@@ -1,0 +1,141 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  background: linear-gradient(135deg, #153677, #4e085f);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+}
+
+.todo-app {
+  align-items: left;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 540px;
+  padding: 40px 30px 70px;
+  display: flex;
+}
+
+.app-title {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.app-title h2, .app-title i {
+  color: #002765;
+}
+
+.app-title i {
+  font-size: 26px;
+}
+
+.row {
+  background-color: #edeef0;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+input {
+  background-color: #0000;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 12px 12px 12px 20px;
+  font-size: 17px;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff5945;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 15px 50px;
+  font-size: 18px;
+  transition: all .25s;
+}
+
+button:hover {
+  filter: brightness(.8);
+}
+
+@media screen and (width <= 400px) {
+  button {
+    border-radius: 0 30px 30px 0;
+    padding: 15px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 12px 8px 12px 50px;
+  font-size: 17px;
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  border: 2px solid #ff5945;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+}
+
+ul .checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul .checked:before {
+  background-color: #ff5945;
+}
+
+span {
+  color: #555;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  transition: all .2s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+span:hover {
+  color: #fff;
+  background-color: #c9c9c9;
+}
+/*# sourceMappingURL=index.b2625c6b.css.map */
