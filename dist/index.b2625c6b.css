@@ -138,4 +138,33 @@ span:hover {
   color: #fff;
   background-color: #c9c9c9;
 }
+
+#buttons {
+  text-align: center;
+  width: 100%;
+}
+
+.button-2 {
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  background-color: #0000000d;
+  border-width: 0;
+  border-radius: 8px;
+  width: 32%;
+  margin: 0;
+  padding: 10px 12px;
+  font-family: Haas Grot Text R Web, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  transition: all .2s;
+  display: inline-block;
+}
 /*# sourceMappingURL=index.b2625c6b.css.map */
