@@ -10,8 +10,13 @@ function addTask() {
         if (currList !== "toDo") showList("toDo");
         list.appendChild(li);
         inputBox.value = "";
-        let span = document.createElement("span");
-        span.innerHTML = "x";
+        let span = document.createElement("button");
+        span.innerHTML = "doing";
+        span.style = "margin-right:100px; color: #ff5945;";
+        li.appendChild(span);
+        span = document.createElement("button");
+        span.innerHTML = "done";
+        span.style = "margin-right:10px; color: #2d8e00;";
         li.appendChild(span);
     }
     saveData("toDo");
