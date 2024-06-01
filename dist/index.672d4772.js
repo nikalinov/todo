@@ -10,26 +10,42 @@ function addTask() {
         if (currList !== "toDo") showList("toDo");
         list.appendChild(li);
         inputBox.value = "";
-        let span = document.createElement("button");
-        span.innerHTML = "doing";
-        span.style = "margin-right:100px; color: #ff5945;";
-        li.appendChild(span);
-        span = document.createElement("button");
-        span.innerHTML = "done";
-        span.style = "margin-right:10px; color: #2d8e00;";
-        li.appendChild(span);
+        addButtons(li);
     }
     saveData("toDo");
 }
+function addButtons(row) {
+    let span = document.createElement("span");
+    span.innerHTML = "doing";
+    span.style = "margin-right:100px; color: #ff5945;";
+    span.classList.add("doing");
+    row.appendChild(span);
+    span = document.createElement("span");
+    span.innerHTML = "done";
+    span.style = "margin-right:10px; color: #2d8e00;";
+    span.classList.add("done");
+    row.appendChild(span);
+}
+//saveData(currList);
 list.addEventListener("click", (e)=>{
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData(currList);
     } else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
-        saveData(currList);
+        saveData("toDo");
+        if (e.target.classList.contains("doing")) moveTask("inProcess", e.target.parentElement.innerHTML);
+        else if (e.target.classList.contains("done")) moveTask("done", e.target.parentElement.innerHTML);
     }
 });
+function moveTask(listType, taskText) {
+    var li = document.createElement("li");
+    li.innerHTML = taskText;
+    showList(listType);
+    addButtons(li);
+    list.appendChild(li);
+    saveData(listType);
+}
 button.addEventListener("click", addTask);
 function saveData(listType) {
     localStorage.setItem(listType, list.innerHTML);
