@@ -1,8 +1,8 @@
 3506
 53/home/nikalinov/javascript-learning/todo/package.json1717164145358678870 0
-50/home/nikalinov/javascript-learning/todo/script.js1717249825816705593 0
+50/home/nikalinov/javascript-learning/todo/script.js1717268950958307266 0
 58/home/nikalinov/javascript-learning/todo/package-lock.json1717164145358678870 0
-54/home/nikalinov/javascript-learning/todo/css/style.css1717170480796698467 0
+54/home/nikalinov/javascript-learning/todo/css/style.css1717254105078708464 0
 51/home/nikalinov/javascript-learning/todo/index.html1717164145206677694 0
 77/home/nikalinov/javascript-learning/todo/node_modules/color-name/package.json1716720821955923671 0
 72/home/nikalinov/javascript-learning/todo/node_modules/color-name/LICENSE1716720821963923745 0
@@ -749,7 +749,7 @@
 77/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/colors.d.ts1717164145314678530 0
 84/home/nikalinov/javascript-learning/todo/node_modules/resolve/test/resolver/quux/foo1717164145290678343 1
 71/home/nikalinov/javascript-learning/todo/node_modules/keyv/src/index.js1716720821975923854 0
-40/home/nikalinov/javascript-learning/todo1717164145358678870 1
+40/home/nikalinov/javascript-learning/todo1717264111285708173 1
 91/home/nikalinov/javascript-learning/todo/node_modules/resolve/test/node_path/x/ccc/index.js1717164145286678313 0
 97/home/nikalinov/javascript-learning/todo/node_modules/eslint/lib/rules/object-property-newline.js1716720822047924512 0
 73/home/nikalinov/javascript-learning/todo/node_modules/uri-js/package.json1716720821995924037 0
@@ -1411,7 +1411,7 @@
 73/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/lib/css1717164145314678530 1
 78/home/nikalinov/javascript-learning/todo/node_modules/@nodelib/fs.walk/LICENSE1716720821947923598 0
 80/home/nikalinov/javascript-learning/todo/node_modules/picocolors/picocolors.d.ts1717164145274678220 0
-62/home/nikalinov/javascript-learning/todo/dist/todo.3464ddca.js1717068234063070573 0
+62/home/nikalinov/javascript-learning/todo/dist/todo.3464ddca.js1717264111761702111 0
 67/home/nikalinov/javascript-learning/todo/node_modules/parent-module1716720821963923745 1
 92/home/nikalinov/javascript-learning/todo/node_modules/path-scurry/dist/commonjs/index.js.map1717164145270678188 0
 72/home/nikalinov/javascript-learning/todo/node_modules/sucrase/dist/types1717164145310678498 1
@@ -1597,16 +1597,16 @@
 71/home/nikalinov/javascript-learning/todo/node_modules/jiti/lib/index.js1717164145258678096 0
 87/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/lib/cli/help/index.js1717164145314678530 0
 78/home/nikalinov/javascript-learning/todo/node_modules/resolve/test/symlinks.js1717164145290678343 0
-66/home/nikalinov/javascript-learning/todo/dist/todo.3464ddca.js.map1717068234067070562 0
+66/home/nikalinov/javascript-learning/todo/dist/todo.3464ddca.js.map1717264111765702060 0
 73/home/nikalinov/javascript-learning/todo/node_modules/sucrase/dist/cli.js1717164145298678405 0
 77/home/nikalinov/javascript-learning/todo/node_modules/postcss-import/index.js1717164145274678220 0
-45/home/nikalinov/javascript-learning/todo/dist1717249825868705810 1
+45/home/nikalinov/javascript-learning/todo/dist1717268951010307431 1
 73/home/nikalinov/javascript-learning/todo/node_modules/is-core-module/test1717164145246678003 1
 85/home/nikalinov/javascript-learning/todo/node_modules/escape-string-regexp/index.d.ts1716720821963923745 0
 79/home/nikalinov/javascript-learning/todo/node_modules/run-parallel/package.json1716720821963923745 0
 77/home/nikalinov/javascript-learning/todo/node_modules/glob/dist/esm/bin.d.mts1717164145238677941 0
 88/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/src/util/hashConfig.js1717164145338678715 0
-56/home/nikalinov/javascript-learning/todo/dist/index.html1717164145538680262 0
+56/home/nikalinov/javascript-learning/todo/dist/index.html1717264111761702111 0
 88/home/nikalinov/javascript-learning/todo/node_modules/fast-json-stable-stringify/example1716720821987923964 1
 98/home/nikalinov/javascript-learning/todo/node_modules/foreground-child/dist/mjs/all-signals.js.map1717164145230677880 0
 87/home/nikalinov/javascript-learning/todo/node_modules/fast-glob/out/providers/stream.js1717164145226677848 0
@@ -1716,7 +1716,7 @@
 99/home/nikalinov/javascript-learning/todo/node_modules/sucrase/dist/parser/tokenizer/readWordTree.js1717164145306678468 0
 80/home/nikalinov/javascript-learning/todo/node_modules/glob/dist/commonjs/glob.js1717164145234677911 0
 61/home/nikalinov/javascript-learning/todo/node_modules/flatted1716720821995924037 1
-68/home/nikalinov/javascript-learning/todo/dist/index.b2625c6b.css.map1717170480840698818 0
+68/home/nikalinov/javascript-learning/todo/dist/index.b2625c6b.css.map1717264111765702060 0
 93/home/nikalinov/javascript-learning/todo/node_modules/@nodelib/fs.walk/out/providers/async.js1716720821963923745 0
 81/home/nikalinov/javascript-learning/todo/node_modules/yaml/dist/schema/types.d.ts1717164145354678839 0
 76/home/nikalinov/javascript-learning/todo/node_modules/util-deprecate/node.js1717164145342678746 0
@@ -1736,7 +1736,7 @@
 95/home/nikalinov/javascript-learning/todo/node_modules/source-map-js/lib/source-map-generator.js1717164145294678375 0
 97/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/lib/util/transformThemeValue.js1717164145318678560 0
 97/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/src/util/transformThemeValue.js1717164145342678746 0
-63/home/nikalinov/javascript-learning/todo/dist/index.672d4772.js1717249825868705810 0
+63/home/nikalinov/javascript-learning/todo/dist/index.672d4772.js1717268951010307431 0
 74/home/nikalinov/javascript-learning/todo/node_modules/postcss-js/README.md1717164145274678220 0
 77/home/nikalinov/javascript-learning/todo/node_modules/import-fresh/index.d.ts1716720821963923745 0
 78/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/package.json1717164145322678592 0
@@ -1745,7 +1745,7 @@
 90/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/src/util/createPlugin.js1717164145338678715 0
 94/home/nikalinov/javascript-learning/todo/node_modules/tailwindcss/src/lib/cacheInvalidation.js1717164145338678715 0
 103/home/nikalinov/javascript-learning/todo/node_modules/eslint/lib/rules/no-misleading-character-class.js1716720822027924330 0
-67/home/nikalinov/javascript-learning/todo/dist/index.672d4772.js.map1717249825868705810 0
+67/home/nikalinov/javascript-learning/todo/dist/index.672d4772.js.map1717268951010307431 0
 78/home/nikalinov/javascript-learning/todo/node_modules/is-core-module/.eslintrc1717164145246678003 0
 85/home/nikalinov/javascript-learning/todo/node_modules/eslint/lib/rules/quote-props.js1716720822047924512 0
 81/home/nikalinov/javascript-learning/todo/node_modules/sucrase/dist/types/cli.d.ts1717164145310678498 0
@@ -3122,7 +3122,7 @@
 72/home/nikalinov/javascript-learning/todo/node_modules/readdirp/README.md1717164145282678282 0
 91/home/nikalinov/javascript-learning/todo/node_modules/eslint/lib/rules/no-negated-in-lhs.js1716720822035924403 0
 94/home/nikalinov/javascript-learning/todo/node_modules/resolve/test/resolver/browser_field/a.js1717164145286678313 0
-64/home/nikalinov/javascript-learning/todo/dist/index.b2625c6b.css1717170480840698818 0
+64/home/nikalinov/javascript-learning/todo/dist/index.b2625c6b.css1717264111761702111 0
 73/home/nikalinov/javascript-learning/todo/node_modules/readdirp/index.d.ts1717164145282678282 0
 70/home/nikalinov/javascript-learning/todo/node_modules/readdirp/LICENSE1717164145282678282 0
 95/home/nikalinov/javascript-learning/todo/node_modules/sucrase/dist/types/Options-gen-types.d.ts1717164145306678468 0

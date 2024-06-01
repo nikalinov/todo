@@ -8,28 +8,40 @@ function addTask() {
     alert("you must write something!");
   } else {
     let li = document.createElement("li");
-    li.innerHTML = inputBox.value;
+    li.innerHTML = "<p class='text' style=''>" + inputBox.value + "</p>";
     if (currList !== "toDo") {
       showList("toDo");
     }
     list.appendChild(li);
     inputBox.value = "";
-    addButtons(li);
+    addDoingButton(li);
+    addDoneButton(li);
   }
   saveData("toDo");
 }
 
-function addButtons(row) {
+function addToDoButton(task) {
+  let span = document.createElement("span");
+  span.innerHTML = "to do";
+  span.style = "margin-right: 200px;  color: #ff0000";
+  span.classList.add("toDo");
+  task.appendChild(span);
+}
+
+function addDoingButton(task) {
   let span = document.createElement("span");
   span.innerHTML = "doing";
-  span.style = "margin-right:100px; color: #ff5945;";
+  span.style = "margin-right: 100px; color: #ff5945;";
   span.classList.add("doing");
-  row.appendChild(span);
-  span = document.createElement("span");
+  task.appendChild(span);
+}
+
+function addDoneButton(task) {
+  let span = document.createElement("span");
   span.innerHTML = "done";
-  span.style = "margin-right:10px; color: #2d8e00;";
+  span.style = "color: #2d8e00;";
   span.classList.add("done");
-  row.appendChild(span);
+  task.appendChild(span);
 }
 //saveData(currList);
 list.addEventListener("click", (e) => {
@@ -38,22 +50,43 @@ list.addEventListener("click", (e) => {
     saveData(currList);
   } else if (e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
-    saveData("toDo");
-    if (e.target.classList.contains("doing")) {
-      moveTask("inProcess", e.target.parentElement.innerHTML);
-    } else if (e.target.classList.contains("done")) {
-      moveTask("done", e.target.parentElement.innerHTML);
+    saveData(currList);
+    if (e.target.classList.contains("toDo")) {
+      moveTask(
+        "toDo",
+        e.target.parentElement.getElementsByClassName("text")[0].innerHTML
+      );
+    } else if (e.target.classList.contains("doing")) {
+      moveTask(
+        "inProcess",
+        e.target.parentElement.getElementsByClassName("text")[0].innerHTML
+      );
+    } else {
+      moveTask(
+        "done",
+        e.target.parentElement.getElementsByClassName("text")[0].innerHTML
+      );
     }
   }
 });
 
 function moveTask(listType, taskText) {
   var li = document.createElement("li");
-  li.innerHTML = taskText;
+  li.innerHTML = "<p class='text'>" + taskText + "</p>";
   showList(listType);
-  addButtons(li);
+  if (listType === "toDo") {
+    addDoingButton(li);
+    addDoneButton(li);
+  } else if (listType === "inProcess") {
+    addToDoButton(li);
+    addDoneButton(li);
+  } else {
+    addToDoButton(li);
+    addDoingButton(li);
+  }
   list.appendChild(li);
   saveData(listType);
+  console.log(localStorage.getItem("done"));
 }
 
 button.addEventListener("click", addTask);
@@ -70,9 +103,13 @@ function showTasks() {
 }
 
 function showList(listType) {
+  if (listType === "Done") {
+    listType = listType.toLowerCase();
+  }
   var currData = localStorage.getItem(listType);
   if (currData) {
-    list.innerHTML = localStorage.getItem(listType);
+    console.log("aaa");
+    list.innerHTML = currData;
   } else {
     list.innerHTML = "";
   }
